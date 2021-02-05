@@ -2,6 +2,13 @@
 
 "use strict";
 
+(function ()){
+    var car ="shitbox";
+
+    console.log(car);
+
+
+
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -108,11 +115,17 @@ console.log(calculateTip(100,0.15))
  * then display the dollar amount they should tip
  */
 
-    var bill = (Number(prompt("How much is your bill?")).toFixed(2));
-    var tip = (Number(prompt("How much would you like to tip?")).toFixed(2));
-    alert(calculateTip(bill, tip ));
+    // var bill = (Number(prompt("How much is your bill?")).toFixed(2));
+    // var tip = (Number(prompt("How much would you like to tip?")).toFixed(2));
+    // alert(calculateTip(bill, tip ));
 
+var billTotal = Number(prompt("how much was your bill? "));
+var tipPercdent = Number(prompt("what percentage would ypu like to tip?"));
 
+var calculateTip = calculateTip(tip,bill);
+var tipMessage = "Would ypu like to tip $" + calculateTip;
+
+alert(tipMessage);
 
 /**
  * TODO:
@@ -131,11 +144,13 @@ console.log(calculateTip(100,0.15))
 
 
 function applyDiscount(oriPrice, perOff){
-    oriPrice = 100 ;
-    perOff = .20 ;
+    oriPrice = 100;
+    perOff = .20;
 
     return (perOff * oriPrice);
 
     console.log(applyDiscount(100, 20));
 
 }
+
+})();
