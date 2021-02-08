@@ -2,12 +2,6 @@
 
 "use strict";
 
-(function ()){
-    var car ="shitbox";
-
-    console.log(car);
-
-
 
 /**
  * TODO:
@@ -153,4 +147,3 @@ function applyDiscount(oriPrice, perOff){
 
 }
 
-})();

@@ -99,7 +99,29 @@ alert(analyzeColor(userInput))
  * return value.
  */
 
+function calcTotal (luckyNum, customerTotal){
+    if (luckyNum === 0){
+        return "I'm sorry no soup for you!!"
+    }else if (luckyNum === 1){
+    var disc1 = customerTotal * .1
+        return "Congrats you get "+ disc1 +" off, your new total is " +(customerTotal - disc1)
+    }else if (luckyNum === 2){
+        var disc2 = customerTotal *.25
+        return "Congrats you get "+ disc2 +" off, your new total is " +(customerTotal - disc2)
+    }else if (luckyNum === 3){
+        var disc3 = customerTotal *.3
+        return "Congrats you get "+ disc3 +" off , your new total is " +(customerTotal - disc3)
+    }else if (luckyNum === 4){
+        var disc4 = customerTotal *.5
+        return "Congrats you get "+ disc4 +" off , your new total is " +(customerTotal - disc4)
+    }else if (luckyNum === 5){
+        var disc5 = customerTotal *1
+        return "Congratulations!! Today you pay nothing! :-D "
+    }
+}
 
+calcTotal(1)
+    console.log(calcTotal(5, 112))
 
 /**
  * TODO:
@@ -108,8 +130,16 @@ alert(analyzeColor(userInput))
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+// Generate a random number between 0 and 6;
+
+var luckyNumber = Math.floor(Math.random() * 6);
+
+
+var custTot =prompt("How much is your bill?")
+alert ("Your lucky number was " +luckyNumber)
+alert ("Your total before discount was " +custTot)
+
+alert (calcTotal(luckyNumber, custTot))
 
 /**
  * TODO:
@@ -127,3 +157,24 @@ alert(analyzeColor(userInput))
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+var userNumber = confirm("would you like to enter a number?")
+if (userNumber) {
+
+    const number = parseInt(prompt("Enter a number: "));
+
+    var result = (number + 100)
+    if (number % 2 == 0) {
+        console.log("The number is even.");
+    } else {
+        console.log("The number is odd.");
+    }
+    {
+        if (number > 0) {
+            console.log("The number is positive");
+        } else console.log("The number is negative");
+    }
+
+    console.log("Your entry plus 100 is " + result)
+
+}else "the user does not wish to play"
