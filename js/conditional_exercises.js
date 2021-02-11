@@ -115,7 +115,7 @@ function calcTotal (luckyNum, customerTotal){
         var disc4 = customerTotal *.5
         return "Congrats you get "+ disc4 +" off , your new total is " +(customerTotal - disc4)
     }else if (luckyNum === 5){
-        var disc5 = customerTotal *1
+
         return "Congratulations!! Today you pay nothing! :-D "
     }
 }
@@ -135,11 +135,11 @@ calcTotal(1)
 var luckyNumber = Math.floor(Math.random() * 6);
 
 
-var custTot =prompt("How much is your bill?")
+var customerTotal =prompt("How much is your bill?")
 alert ("Your lucky number was " +luckyNumber)
-alert ("Your total before discount was " +custTot)
+alert ("Your total before discount was " +customerTotal)
 
-alert (calcTotal(luckyNumber, custTot))
+alert (calcTotal(luckyNumber, customerTotal))
 
 /**
  * TODO:
@@ -164,7 +164,7 @@ if (userNumber) {
     const number = parseInt(prompt("Enter a number: "));
 
     var result = (number + 100)
-    if (number % 2 == 0) {
+    if (number % 2 === 0) {
         console.log("The number is even.");
     } else {
         console.log("The number is odd.");
@@ -177,4 +177,4 @@ if (userNumber) {
 
     console.log("Your entry plus 100 is " + result)
 
-}else "the user does not wish to play"
+}
