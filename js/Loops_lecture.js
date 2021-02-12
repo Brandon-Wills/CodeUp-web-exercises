@@ -142,13 +142,13 @@
 // }
 // alert ("hello Nicholas!")
 
-// for (var i = 5; i <100000; i = i + 5) {
-//     console.log(i)
-//     if (i === 555) {
-//
-//         break;
-//     }
-// }
+for (var i = 5; i <100000; i = i + 5) {
+    console.log(i)
+    if (i === 555) {
+
+        break;
+    }
+}
 
 // for (var i = 1; i < 100; i = i - 1) {
 //
@@ -157,9 +157,9 @@
 //         break;
 //     }
 // }
-//
-// console.log( i + "bottles of beer on the wall")
 
+// console.log( i + "bottles of beer on the wall")
+//
 // for (var i = 0; i < 100; i++) {
 //
 //     if (i% 2 !== 0){
