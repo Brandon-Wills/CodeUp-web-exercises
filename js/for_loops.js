@@ -1,7 +1,7 @@
 
 
 // Ex #1
-//
+
 // const number = parseInt(prompt('Enter an integer: '));
 //
 // for (let i = 1; i <= 10; i++) {
@@ -26,12 +26,12 @@
 // Ex #3
 
 
-// function getRandomNum(i) {
+// function getRandomNum(x) {
 //     for (Math.floor(Math.random(20, 200) * Math.ceil(200))){
 //
 //     }
 // }
-// if (i % 2 ===0) {
+// if (i % 2 ===0 ) {
 //     console.log(i + " is Even")
 // } else if (i % 3 ===0){
 //    console.log(i + " Is Odd")
@@ -42,10 +42,10 @@
 // var ranNum = Math.floor(Math.random() * 200) + 20;
 //
 // if (ranNum % 2 ===0) {
-//     console.log(ranNum + " is Even")
+//     console.log("Your number " + ranNum + " is Even")
 // } else if (ranNum % 2 !==0){
-//    console.log(ranNum + " Is Odd")
-// }
+//    console.log("OMG!! Your number " + ranNum + " Is Odd")
+//     }
 // }
 
 //end
@@ -60,7 +60,7 @@
 // Ex #4
 
 // function numberStack() {
-//     var numRows = 9;
+//     var numRows = 20;   // ran to 20 just to see how it would look (lol)
 //     var output = '';
 //     for (var i = 1; i <= numRows; i++) {
 //         for (var num = 1; num <= i; num++) {
@@ -73,6 +73,17 @@
 //
 // numberStack();
 
+
+// teachers demo -
+// for (var outerLoop = 1; outerLoop <= 0; outerLoop ++){
+//     var output = "";
+//     for (innerLoop = 1; innerLoop <=  outerLoop; innerLoop++){
+//         output= + output + outerLoop;
+//     }
+// }
+
+
+
 // Ex #5
 
 // for (var i = 5; i <105; i = i + 5) {
@@ -82,6 +93,12 @@
 //         break;
 //     }
 // }
+// teachers version
+
+// for (var i = 100; i >= 5; i -= 5){
+//     console.log(i)
+// }
+
 
 //Ex #6
 
@@ -105,10 +122,16 @@
 //     }
 //     console.log("The number is " + i + "");
 // }
-
+//
 // var i = 1
 // while(i < 65536) {
 //     i = i * 2
 //     console.log(i)
 //     i++
 // }
+
+
+// (usersNumber % 2 === 0 || !isNumberInRange(usersNumber))
+
+
+
