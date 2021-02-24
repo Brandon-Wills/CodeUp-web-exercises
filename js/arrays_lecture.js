@@ -121,7 +121,7 @@ console.log(favFoods[0]);
 console.log(favFoods[1]);
 console.log(favFoods[2]);
 
-console.log(Math.floor % 2 === 0[3])
+// console.log(Math.floor % 2 === 0[3])
 
 // TODO: create a function called `returnLastElement` that accepts an array and returns the last element of that array
 
@@ -137,9 +137,11 @@ console.log(Math.floor % 2 === 0[3])
 // console.log(returnLastElement(instructors)); //fernando
 // console.log(returnLastElement(daysOfTheWeek)); //sunday
 
+function returnLastElement(array) {
+    return array[array.length - 1];
+}
 
-
-
+console.log((returnLastElement(favFoods)))
 
 /* ***************************************************************
 * 					ITERATING ARRAYS
@@ -152,6 +154,12 @@ console.log(Math.floor % 2 === 0[3])
 
 // TODO TOGETHER: Alert "that's my favorite shape!" when your favorite shape is iterated over in the loop.
 
+for (var i = 0; i < shapes.length; i++){
+    console.log("looping through shapes Array. We are at  "  + shapes[i] + " at position " +i);
+    if (shapes[i] === "circle"){
+        alert(shapes[i] + " is my favorite shape!")
+    }
+}
 
 
 // TODO: What happens if we change var i = 1? or var i = 2;
@@ -178,8 +186,16 @@ console.log(Math.floor % 2 === 0[3])
 *************************************************************** */
 
 // TODO TOGETHER: Using a for each loop, console.log each shape from the shapes array
+var printShape = function (shape){
+    console.log(shape)
+}
+// shapes.forEach(function (shape)){
+//     console.log(shapes)
+//}
 
+shapes.forEach(printShape)
 
+function myForEach
 
 // TODO TOGETHER: Using a for each loop, console.log each element from the following array: var pies = ["apple", "cherry", "key lime", "huckleberry"];
 
