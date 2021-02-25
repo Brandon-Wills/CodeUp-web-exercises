@@ -220,7 +220,19 @@ sigOtherCar = {
     }
 }
 
-var theGarage = [myCar, sigOtherCar]
+myLastCar = {
+    make: "Nissan",
+    model: "Xterra POS",
+    year: "2005" ,
+    owner: {
+        firstName: "Brandon",
+        lastName: "Wills"
+    },
+    turnOn: function () {
+        alert("Putting the key in the ignition - fired up the " + this.make + " " + this.model + " AWE CRAP! It keeps Stalling out, I might need a mechanic")
+    }
+}
+var theGarage = [myCar, sigOtherCar, myLastCar]
 
 console.log(theGarage);
 
@@ -235,26 +247,29 @@ theGarage.forEach(function(car){
 //One final TODO: A bigger task - set up your own garage and add at least another vehicle into it. Log your garage array to verify it contains the cars you want - once your garage has the right cars, write a loop to access some properties or a method from them!
 
 
-myLastCar = {
-    make: "Nissan",
-    model: "Xterra POS",
-    year: "2005" ,
-    owner: {
-        firstName: "Brandon",
-        lastName: "Wills"
-    },
-    turnOn: function () {
-        alert("Putting the key in the ignition - fired up the " + this.make + " " + this.model + " AWE CRAP! It keeps Stalling out, I might need a mechanic")
-    }
-}
+// this code has been commented out and reinserted at line 223
+// for readability and Functionality.
 
-var theGarage = [myCar, sigOtherCar, myLastCar]
+// myLastCar = {
+//     make: "Nissan",
+//     model: "Xterra POS",
+//     year: "2005" ,
+//     owner: {
+//         firstName: "Brandon",
+//         lastName: "Wills"
+//     },
+//     turnOn: function () {
+//         alert("Putting the key in the ignition - fired up the " + this.make + " " + this.model + " AWE CRAP! It keeps Stalling out, I might need a mechanic")
+//     }
+// }
 
-console.log(theGarage);
-
-theGarage.forEach(function(car){
-    car.turnOn();
-})
+// var theGarage = [myCar, sigOtherCar, myLastCar]
+//
+// console.log(theGarage);
+//
+// theGarage.forEach(function(car){
+//     car.turnOn();
+// })
 
 
 
