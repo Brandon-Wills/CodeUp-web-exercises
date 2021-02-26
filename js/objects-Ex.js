@@ -14,13 +14,14 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-// var person = {
-//     firstName: "Brandon",
-//     lastName: "Wills",
-//     greeting: "Hey, What's Up??"
-//     }
-//     console.log(person.firstName);
-//     console.log(person.lastName);
+
+    var person = {
+    firstName: "Brandon",
+    lastName: "Wills",
+    greeting: "Hey, What's Up??"
+    }
+    console.log(person.firstName);
+    console.log(person.lastName);
 
 
     /**
@@ -33,15 +34,20 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    var person = {
-        firstName: "Brandon",
-        lastName: "Wills",
-        greeting: "Hey, What's Up??"
-    }
-    console.log(person.firstName);
-    console.log(person.lastName);
+    // var person = {
+    //     firstName: "Brandon",
+    //     lastName: "Wills",
+    //     greeting: "Hey, What's Up??"
+    // }
+    // console.log(person.firstName);
+    // console.log(person.lastName);
+    //
+    // console.log(person.greeting)
 
-    console.log(person.greeting)
+    person.sayHello = function (){
+        return "hello from " + this.firstName + " " + this.lastName +"!"
+    }
+    console.log(person.sayHello())
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -57,22 +63,32 @@
      * and console.log the relevant messages for each person
      */
 
-var shoppers = [
+    var shoppers = [
         {name: "Cameron", amount: 180},
         {name: "Ryan", amount: 250},
         {name: "George", amount: 320}
     ];
-console.log(shoppers);
+    console.log(shoppers);
 
-shoppers.forEach(function (shoppers) {
+    shoppers.forEach(function (shoppers) {
     if (shoppers.amount > 200) {
         console.log("Hey " + shoppers.name, "," + " We were going to charge you $" + shoppers.amount + " But today (requirements met) were going to charge you this instead $" + (shoppers.amount - (shoppers.amount * .12))
     );
     }else {
-        console.log("hello " + shoppers.name + " , " + " Your total today is $" + (shoppers.amount))
+        console.log("hello " + shoppers.name + " , " + " Your total today is $" + (shoppers.amount));
     }
-})
+});
 
+    // shopper.forEach(function (shopper){
+    //     if (shopper.amount > 200){
+    //         var discount = shopper.amount * .12;
+    //         var newAmount = shopper.amount - discount;
+    //         console.log(shopper.name + " You were Originally going to pay " + shopper.amount + " , but today your discounted total is $" + newAmount);
+    //
+    //     }else{
+    //         console.log(shopper.name +" you still owe $" +shopper.amount + ", You did not get a Discount")
+    //     }
+    // });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -87,22 +103,42 @@ shoppers.forEach(function (shoppers) {
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
+
+
     var books = [
-        {title: "A tale of two cities",authorLN: "Dickens", authorFN: "Charles"},
-        {title: "Tick Tock", authorLN: "Koontz", authorFN: "Dean"},
-        {title: "Pet Cemetery", authorLN: "King", authorFN: 'Stephen'},
-        {title: "The Hunger Games", authorLN: "Collins", authorFN: "Suzanne"},
-        {title: "Slaughter House V", authorLN: "Vonnagut", authorFN: "Kirk"},
-        {title: "The Lost Boys", authorLN: "Gardner", authorFN: "Shaw"},
-        {title: "An Interview With A Vampire", authorLN: "Rice", authorFN: "Anne"}
+        {title: "A tale of two cities",
+            author: {lastName: "Dickens", firstName: "Charles"}
+            },
+        {title: "Tick Tock",
+            author: {lastName: "Koontz", firstName: "Dean"}
+            },
+        {title: "Pet Cemetery",
+        author: {lastName: "King", firstName: 'Stephen'}
+            },
+        {
+        title: "The Hunger Games",
+        author: {lastName: "Collins", firstName: "Suzanne"}
+            },
+        {
+        title: "Slaughter House V",
+        author: {lastName: "Vonnagut", firstName: "Kirk"}
+            },
+        {
+        title: "The Lost Boys",
+        author: {lastName: "Gardner", firstName: "Shaw"}
+            },
+        {
+        title: "An Interview With A Vampire",
+        author: {lastName: "Rice", firstName: "Anne"}
+    }
     ]
 
-    console.log(books[0]);
-    console.log(books[1]);
-    console.log(books[2]);
-    console.log(books[3]);
-    console.log(books[4]);
-    console.log(books[5]);
+    console.log(books[0].title);
+    console.log(books[1].title);
+    console.log(books[2].title);
+    console.log(books[3].title);
+    console.log(books[4].title);
+    console.log(books[5].title);
 
     /**
      * TODO:
@@ -130,9 +166,46 @@ shoppers.forEach(function (shoppers) {
      */
 
 
-
-
-
+    // var books = [
+    //     {title: "A tale of two cities",
+    //         author: {lastName: "Dickens", firstName: "Charles"}
+    //     },
+    //     {title: "Tick Tock",
+    //         author: {lastName: "Koontz", firstName: "Dean"}
+    //     },
+    //     {
+    //         title: "Pet Cemetery",
+    //         author: {lastName: "King", firstName: 'Stephen'}
+    //     },
+    //     {
+    //         title: "The Hunger Games",
+    //         author: {lastName: "Collins", firstName: "Suzanne"}
+    //     },
+    //     {
+    //         title: "Slaughter House V",
+    //         author: {lastName: "Vonnagut", firstName: "Kirk"}
+    //     },
+    //     {
+    //         title: "The Lost Boys",
+    //         author: {lastName: "Gardner", firstName: "Shaw"}
+    //     },
+    //     {title: "An Interview With A Vampire",
+    //         author: {lastName: "Rice", firstName: "Anne"}
+    //     }
+    // ]
+    //
+    // console.log(books[0].title);
+    // console.log(books[0].author.firstName + " " + books[0].author.lastName);
+    // console.log(books[1].title);
+    // console.log(books[1].author.firstName + " " + books[1].author.lastName);
+    // console.log(books[2].title);
+    // console.log(books[2].author.firstName + " " + books[2].author.lastName);
+    // console.log(books[3].title);
+    // console.log(books[3].author.firstName + " " + books[3].author.lastName);
+    // console.log(books[4].title);
+    // console.log(books[4].author.firstName + " " + books[4].author.lastName);
+    // console.log(books[5].title);
+    // console.log(books[5].author.firstName + " " + books[5].author.lastName);
 
 
 
@@ -146,5 +219,8 @@ shoppers.forEach(function (shoppers) {
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
+
 
 })();
