@@ -75,3 +75,5 @@ alert("You can usse this offer is a " + canUserUseOffer + " Statemant")
 // var hasEnojughItems = hasMoreThanTwoItems || isPremiumMember;
 //
 //var canUserUseOffer = hasMoreThanTwoItems && isOfferStillValid;
+
+

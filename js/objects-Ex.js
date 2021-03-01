@@ -105,40 +105,40 @@
 
 
 
-    var books = [
-        {title: "A tale of two cities",
-            author: {lastName: "Dickens", firstName: "Charles"}
-            },
-        {title: "Tick Tock",
-            author: {lastName: "Koontz", firstName: "Dean"}
-            },
-        {title: "Pet Cemetery",
-        author: {lastName: "King", firstName: 'Stephen'}
-            },
-        {
-        title: "The Hunger Games",
-        author: {lastName: "Collins", firstName: "Suzanne"}
-            },
-        {
-        title: "Slaughter House V",
-        author: {lastName: "Vonnagut", firstName: "Kirk"}
-            },
-        {
-        title: "The Lost Boys",
-        author: {lastName: "Gardner", firstName: "Shaw"}
-            },
-        {
-        title: "An Interview With A Vampire",
-        author: {lastName: "Rice", firstName: "Anne"}
-    }
-    ]
-
-    console.log(books[0].title);
-    console.log(books[1].title);
-    console.log(books[2].title);
-    console.log(books[3].title);
-    console.log(books[4].title);
-    console.log(books[5].title);
+    // var books = [
+    //     {title: "A tale of two cities",
+    //         author: {lastName: "Dickens", firstName: "Charles"}
+    //         },
+    //     {title: "Tick Tock",
+    //         author: {lastName: "Koontz", firstName: "Dean"}
+    //         },
+    //     {title: "Pet Cemetery",
+    //     author: {lastName: "King", firstName: 'Stephen'}
+    //         },
+    //     {
+    //     title: "The Hunger Games",
+    //     author: {lastName: "Collins", firstName: "Suzanne"}
+    //         },
+    //     {
+    //     title: "Slaughter House V",
+    //     author: {lastName: "Vonnagut", firstName: "Kirk"}
+    //         },
+    //     {
+    //     title: "The Lost Boys",
+    //     author: {lastName: "Gardner", firstName: "Shaw"}
+    //         },
+    //     {
+    //     title: "An Interview With A Vampire",
+    //     author: {lastName: "Rice", firstName: "Anne"}
+    // }
+    // ]
+    //
+    // console.log(books[0].title);
+    // console.log(books[1].title);
+    // console.log(books[2].title);
+    // console.log(books[3].title);
+    // console.log(books[4].title);
+    // console.log(books[5].title);
 
     /**
      * TODO:
@@ -166,46 +166,46 @@
      */
 
 
-    // var books = [
-    //     {title: "A tale of two cities",
-    //         author: {lastName: "Dickens", firstName: "Charles"}
-    //     },
-    //     {title: "Tick Tock",
-    //         author: {lastName: "Koontz", firstName: "Dean"}
-    //     },
-    //     {
-    //         title: "Pet Cemetery",
-    //         author: {lastName: "King", firstName: 'Stephen'}
-    //     },
-    //     {
-    //         title: "The Hunger Games",
-    //         author: {lastName: "Collins", firstName: "Suzanne"}
-    //     },
-    //     {
-    //         title: "Slaughter House V",
-    //         author: {lastName: "Vonnagut", firstName: "Kirk"}
-    //     },
-    //     {
-    //         title: "The Lost Boys",
-    //         author: {lastName: "Gardner", firstName: "Shaw"}
-    //     },
-    //     {title: "An Interview With A Vampire",
-    //         author: {lastName: "Rice", firstName: "Anne"}
-    //     }
-    // ]
-    //
-    // console.log(books[0].title);
-    // console.log(books[0].author.firstName + " " + books[0].author.lastName);
-    // console.log(books[1].title);
-    // console.log(books[1].author.firstName + " " + books[1].author.lastName);
-    // console.log(books[2].title);
-    // console.log(books[2].author.firstName + " " + books[2].author.lastName);
-    // console.log(books[3].title);
-    // console.log(books[3].author.firstName + " " + books[3].author.lastName);
-    // console.log(books[4].title);
-    // console.log(books[4].author.firstName + " " + books[4].author.lastName);
-    // console.log(books[5].title);
-    // console.log(books[5].author.firstName + " " + books[5].author.lastName);
+    var books = [
+        {title: "A tale of two cities",
+            author: {lastName: "Dickens", firstName: "Charles"}
+        },
+        {title: "Tick Tock",
+            author: {lastName: "Koontz", firstName: "Dean"}
+        },
+        {
+            title: "Pet Cemetery",
+            author: {lastName: "King", firstName: 'Stephen'}
+        },
+        {
+            title: "The Hunger Games",
+            author: {lastName: "Collins", firstName: "Suzanne"}
+        },
+        {
+            title: "Slaughter House V",
+            author: {lastName: "Vonnagut", firstName: "Kirk"}
+        },
+        {
+            title: "The Lost Boys",
+            author: {lastName: "Gardner", firstName: "Shaw"}
+        },
+        {title: "An Interview With A Vampire",
+            author: {lastName: "Rice", firstName: "Anne"}
+        }
+    ]
+
+    console.log(books[0].title);
+    console.log(books[0].author.firstName + " " + books[0].author.lastName);
+    console.log(books[1].title);
+    console.log(books[1].author.firstName + " " + books[1].author.lastName);
+    console.log(books[2].title);
+    console.log(books[2].author.firstName + " " + books[2].author.lastName);
+    console.log(books[3].title);
+    console.log(books[3].author.firstName + " " + books[3].author.lastName);
+    console.log(books[4].title);
+    console.log(books[4].author.firstName + " " + books[4].author.lastName);
+    console.log(books[5].title);
+    console.log(books[5].author.firstName + " " + books[5].author.lastName);
 
 
 
