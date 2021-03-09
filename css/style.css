@@ -1,0 +1,50 @@
+
+body {
+    background-color: #e0e0eb;
+    background-image: ;
+    backround-repeat: repeat-x;
+    /*background-size: 150px;*;*/
+    background-position: top left;
+    font-family: "palatino";
+    auto-margins;
+}
+.auto-margins{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header {
+    text-align: center;
+    text-decoration-line: underline;
+    color: #3c3c5d;
+
+}
+
+ul, ol {
+    list-style: upper-latin;
+}
+
+table {
+    border: Thin Solid Black;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+th,td {
+    border: thin dotted Black;
+    padding: 7.5px;
+}
+
+a-link {
+    color: #0047b3;
+}
+
+a:visited {
+    color: dimgrey;
+}
+
+a:hover {
+    backround: #661a00;
+    color: #a3a3c2;
+}

@@ -220,7 +220,19 @@
      *   `showBookInfo` function.
      */
 
+//    {title: "An Interview With A Vampire",
+//             author: {lastName: "Rice", firstName: "Anne"}
+//         }
 
 
+function createBook (title, firstName, lastName){
+    var title = title;
+    var author = {lastName: lastName, firstName: firstName}
+    var book = {title: title, author: author}
+    return book;
 
+    }
+
+    console.log(createBook("Garfeild", "Jim", "Davis"));
 })();
+
