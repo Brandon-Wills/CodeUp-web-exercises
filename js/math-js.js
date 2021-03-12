@@ -8,8 +8,8 @@
         getArea: function (radius) {
         let area = Math.PI * (radius * radius);
         return area;
-        // console.log(area1);
-        // console.log(Math.round(area*100)/100);
+        console.log(area1);
+        console.log(Math.round(area*100)/100);
     },
         logInfo: function (doRounding) {
             // TODO: complete this method.
